@@ -69,12 +69,12 @@ namespace warm {
             this.children_ = [];
             this.localPos_ = new Vec2();
             this.localRot_ = 0;
-            this.localScl_ = new Vec2(Fx.oneFx8, Fx.oneFx8);
+            this.localScl_ = new Vec2(1, 1);
             this.localPos_.onChanged(() => this.dirty = true);
             this.localScl_.onChanged(() => this.dirty = true);
             this.worldPos_ = new Vec2();
             this.worldRot_ = 0;
-            this.worldScl_ = new Vec2(Fx.oneFx8, Fx.oneFx8);
+            this.worldScl_ = new Vec2(1, 1);
             this.dirty_ = true;
         }
 
