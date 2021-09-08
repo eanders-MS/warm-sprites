@@ -20,8 +20,8 @@ namespace warm {
 
         public setImage(img: Image) {
             this.img = img;
-            const w2 = img.width >> 1;
-            const h2 = img.height >> 1;
+            const w2 = img.width / 2;
+            const h2 = img.height / 2;
             // Vertices in clockwise order
             this.src = [
                 new Vec2(-w2, -h2),
