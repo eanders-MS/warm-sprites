@@ -47,8 +47,8 @@ namespace warm {
 
         public get localRot() { return this.localRot_; }
         public set localRot(v: number) {
-            this.localRot_ = v;
             this.dirty = this.dirty_ || this.localRot_ !== v;
+            this.localRot_ = v;
         }
 
         public get localScl() { return this.localScl_; }
